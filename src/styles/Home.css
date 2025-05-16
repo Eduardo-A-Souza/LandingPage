@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.custom-topbar {
+    background-color: #222;
+    border-radius: 0 0 8px 8px;
+}
+
+.main {
+    background-color: black;
+    width: 25px;
+    height: 25px;
+}
+
+.custom-btn {
+    color: #eee;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    color: #eee;
+    background-color: #222;
+    transform: scale(1.1);
+    text-decoration: none;
+}
