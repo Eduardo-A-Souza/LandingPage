@@ -6,26 +6,39 @@
     text-decoration: none;
 }
 
+.global-container {
+    background-color: #eee;
+}
+
 .custom-topbar {
     background-color: #222;
     border-radius: 0 0 8px 8px;
-}
-
-.main {
-    background-color: black;
-    width: 25px;
-    height: 25px;
 }
 
 .custom-btn {
     color: #eee;
     transition: 0.3s;
     text-decoration: none;
+    border: none;
 }
 
 .custom-btn:hover {
     color: #eee;
-    background-color: #222;
     transform: scale(1.1);
     text-decoration: none;
 }
+
+.footer-container {
+    background-color: #ccc;
+}
+
+.custom-link {
+    transition: 0.3s;
+}
+
+.custom-link:hover {
+    color: #444;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+

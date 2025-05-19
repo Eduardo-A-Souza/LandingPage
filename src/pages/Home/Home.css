@@ -1,0 +1,17 @@
+.sidebar-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-product {
+    background-color: #222;
+    color: #eee;
+}
+
+.custom-btn-product {
+    background-color: #444;
+    color: #eee;
+}
+
+.custom-btn-product:hover {
+    background-color: #666;
+}
