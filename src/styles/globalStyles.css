@@ -6,13 +6,13 @@
     text-decoration: none;
 }
 
-.global-container {
+.custom-container {
     background-color: #eee;
+    width: 100%;
 }
 
 .custom-topbar {
     background-color: #222;
-    border-radius: 0 0 8px 8px;
 }
 
 .custom-btn {
@@ -41,4 +41,3 @@
     transform: scale(1.1);
     text-decoration: underline;
 }
-
