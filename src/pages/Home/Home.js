@@ -69,39 +69,29 @@ function Home() {
         </div>
       </main>
       {/* final da pagina com as formas de contato com a empresa */}
-      <footer className="container-inline footer-container ">
-        <ul className="d-flex justify-content-center align-items-center text-center mb-0 pt-3 ">
-          <li className="footer-links px-5 pb-0">
-            <i
-              className="fab fa-whatsapp fs-4 text-success mb-1"
-              alt="whatssapp icon"
-            />
-            <p className="mb-1 fs-4">Whatsapp</p>
-            <a className="btn custom-link" href="#" alt="whatsapp number">
-              (61) 9 9999-9999
-            </a>
-          </li>
-          <li className="footer-links px-5 pb-0">
-            <i
-              className="fas fa-envelope fs-4 text-success mb-1"
-              alt="e-mail icon"
-            />
-            <p className="mb-1 fs-4">e-mail</p>
-            <a className="btn custom-link" href="#" alt="e-mail adress">
-              email@email.com
-            </a>
-          </li>
-          <li className="footer-links px-5 pb-0 ">
-            <i
-              className="fas fa-phone fs-4 text-success mb-1"
-              alt="phone icon"
-            />
-            <p className="mb-1 fs-4">telefone</p>
-            <a className="btn custom-link" href="#" alt="phone number">
-              (61) 9 9999-9999
-            </a>
-          </li>
-        </ul>
+      <footer className="container-fluid py-4 footer-container">
+        <div className="row justify-content-center text-center">
+          {/* WhatsApp */}
+          <div className="col-12 col-md-4 mb-4">
+            <i className="fab fa-whatsapp fs-3 text-success mb-2" />
+            <p className="mb-1 fs-5">WhatsApp</p>
+            <a className="btn custom-link" href="#">(61) 9 9999-9999</a>
+          </div>
+
+          {/* E-mail */}
+          <div className="col-12 col-md-4 mb-4">
+            <i className="fas fa-envelope fs-3 text-success mb-2" />
+            <p className="mb-1 fs-5">E-mail</p>
+            <a className="btn custom-link" href="#">email@email.com</a>
+          </div>
+
+          {/* Telefone */}
+          <div className="col-12 col-md-4 mb-4">
+            <i className="fas fa-phone fs-3 text-success mb-2" />
+            <p className="mb-1 fs-5">Telefone</p>
+            <a className="btn custom-link" href="#">(61) 9 9999-9999</a>
+          </div>
+        </div>
       </footer>
     </div>
   );

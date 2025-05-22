@@ -1,0 +1,14 @@
+.custom-btnprod {
+    background-color: #444;
+    color: #eee;
+}
+
+.custom-btnprod:hover {
+    background-color: #666;
+}
+
+@media (min-width: 835px) {
+    .custom-btnprod {
+        width: 25% !important;
+    }
+}

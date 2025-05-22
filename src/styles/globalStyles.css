@@ -8,7 +8,6 @@
 
 .custom-container {
     background-color: #eee;
-    width: 100%;
 }
 
 .custom-topbar {
@@ -34,6 +33,7 @@
 
 .custom-link {
     transition: 0.3s;
+    border: none;
 }
 
 .custom-link:hover {
