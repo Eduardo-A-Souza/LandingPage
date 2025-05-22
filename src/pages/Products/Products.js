@@ -23,21 +23,21 @@ function Products() {
 
   return (
     <div className="container-inline custom-container d-flex flex-column justify-content-center align-items-center">
-      {/* Cabeçalho - Logo e navegação */}
-      <header className="d-flex justify-content-between align-items-center py-4 px-4 custom-topbar w-100">
+    {/* Cabeçalho - Logo e navegação */}
+    <header className="d-flex justify-content-between align-items-center py-4 px-2 px-md-4 custom-topbar w-100">
         <div className="logo-astem img-fluid">
-          <a href="/">
-            <img src="#" alt="Logo" />
-          </a>
+            <a href="/">
+                <img src="#" alt="Logo" />
+            </a>
         </div>
         {/* Menu de navegação */}
-        <nav className="d-flex px-3">
-          <a className="btn btn-link custom-btn">teste1</a>
-          <a className="btn btn-link custom-btn">teste2</a>
-          <a className="btn btn-link custom-btn">teste3</a>
-          <a className="btn btn-link custom-btn">teste4</a>
+        <nav className="d-flex px-1 px-sm-3">
+            <a className="btn btn-link custom-btn">teste1</a>
+            <a className="btn btn-link custom-btn">teste2</a>
+            <a className="btn btn-link custom-btn">teste3</a>
+            <a className="btn btn-link custom-btn">teste4</a>
         </nav>
-      </header>
+    </header>
 
       {/* Conteúdo principal - Detalhes do produto */}
       <main className="container-inline text-center my-4 py-4 w-75">

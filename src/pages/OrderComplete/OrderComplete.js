@@ -23,14 +23,14 @@ function OrderComplete() {
     return (
         <div className="container-inline custom-container d-flex flex-column justify-content-center align-items-center">
             {/* Cabeçalho - Logo e navegação */}
-            <header className="d-flex justify-content-between align-items-center py-4 px-4 custom-topbar w-100">
-                <div className="logo-astem img-fluid w-auto">
+            <header className="d-flex justify-content-between align-items-center py-4 px-2 px-md-4 custom-topbar w-100">
+                <div className="logo-astem img-fluid">
                     <a href="/">
                         <img src="#" alt="Logo" />
                     </a>
                 </div>
                 {/* Menu de navegação */}
-                <nav className="d-flex px-3 w-auto">
+                <nav className="d-flex px-1 px-sm-3">
                     <a className="btn btn-link custom-btn">teste1</a>
                     <a className="btn btn-link custom-btn">teste2</a>
                     <a className="btn btn-link custom-btn">teste3</a>
@@ -40,17 +40,17 @@ function OrderComplete() {
 
             {/* Conteúdo principal - Confirmação do pedido */}
             <main className="container-inline d-flex justify-content-center align-items-center text-center my-4 py-4 w-75">
-                <section className="container py-4 mb-4">
+                <section className="container py-4 mb-4 d-flex flex-column align-items-center">
                     {/* Título com nome do produto */}
                     <h1 className="container-title py-4 mb-4">finalizando pedido do produto {orderData.nome}</h1>
 
                     {/* Imagem do produto */}
-                    <div className="w-100 d-flex justify-content-center mb-4">
+                    <div className="col-12 col-md-6 text-center text-center mb-2 mb-md-0">
                         <img
                             src={orderData.imagem}
                             alt={orderData.nome}
-                            className="rounded-3 img-fluid"
-                            style={{ maxWidth: "500px" }}
+                            className="rounded-3 img-fluid shadow-sm"
+                            width="400px"
                         />
                     </div>
 
