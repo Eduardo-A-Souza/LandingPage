@@ -1,5 +1,8 @@
+/*
+ * Página inicial do site
+ * Responsável por exibir a landing page com todos os produtos disponíveis
+ */
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { produtos } from "../../data/DataProducts";
 
@@ -11,11 +14,12 @@ import "./HomeStyles.css";
 function Home() {
   return (
     <div className="container-inline custom-container">
-      {/* cabeçalho */}
+      {/* Cabeçalho - Contém logo e menu de navegação */}
       <header className="d-flex justify-content-between align-items-center py-4 px-4 custom-topbar">
         <div className="logo-astem">
           <img src="#" alt="Logo" />
         </div>
+        {/* Menu de navegação principal */}
         <nav className="d-flex px-3">
           <a className="btn btn-link custom-btn">teste1</a>
           <a className="btn btn-link custom-btn">teste2</a>
@@ -24,8 +28,9 @@ function Home() {
         </nav>
       </header>
 
-      {/* Layout principal com conteúdo lateral e principal */}
-      <main className="container text-center d-flex flex-column justify-content-between align-items-center  main-container p-2">
+      {/* Conteúdo principal */}
+      <main className="container text-center d-flex flex-column justify-content-between align-items-center main-container p-2">
+        {/* Banner principal com apresentação da empresa */}
         <div className="main-banner d-flex my-5">
           <aside className="sidebar me-5 text-center">
             <h2 className="sidebar-title fs-1">Astem</h2>
@@ -39,13 +44,17 @@ function Home() {
             </p>
           </div>
         </div>
+
+        {/* Grid de produtos */}
         <div className="contianer main-products">
           <div className="row g-4">
+            {/* Mapeamento dos produtos - cada produto gera um card */}
             {produtos.map((produto) => (
               <div
                 key={produto.id}
                 className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4"
               >
+                {/* Card individual do produto */}
                 <div className="card h-100 box-product">
                   <img
                     src={produto.imagem}
@@ -68,24 +77,25 @@ function Home() {
           </div>
         </div>
       </main>
-      {/* final da pagina com as formas de contato com a empresa */}
+
+      {/* Rodapé - Informações de contato */}
       <footer className="container-fluid py-4 footer-container">
         <div className="row justify-content-center text-center">
-          {/* WhatsApp */}
+          {/* Seção WhatsApp */}
           <div className="col-12 col-md-4 mb-4">
             <i className="fab fa-whatsapp fs-3 text-success mb-2" />
             <p className="mb-1 fs-5">WhatsApp</p>
             <a className="btn custom-link" href="#">(61) 9 9999-9999</a>
           </div>
 
-          {/* E-mail */}
+          {/* Seção E-mail */}
           <div className="col-12 col-md-4 mb-4">
             <i className="fas fa-envelope fs-3 text-success mb-2" />
             <p className="mb-1 fs-5">E-mail</p>
             <a className="btn custom-link" href="#">email@email.com</a>
           </div>
 
-          {/* Telefone */}
+          {/* Seção Telefone */}
           <div className="col-12 col-md-4 mb-4">
             <i className="fas fa-phone fs-3 text-success mb-2" />
             <p className="mb-1 fs-5">Telefone</p>
