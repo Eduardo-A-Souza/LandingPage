@@ -1,0 +1,19 @@
+.logo-astem {
+    display: flex;
+    align-items: center;
+}
+
+.logo-astem img {
+    max-height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-astem img:hover {
+    transform: scale(1.05);
+}
+
+.logo-astem a {
+    text-decoration: none;
+    display: block;
+}

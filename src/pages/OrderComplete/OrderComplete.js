@@ -9,7 +9,6 @@ import { produtos } from "../../data/DataProducts";
 import { Link } from "react-router-dom";
 
 import "../../styles/globalStyles.css"
-import "bootstrap/dist/css/bootstrap.min.css"
 import "./OrderComplete.css"
 
 function OrderComplete() {

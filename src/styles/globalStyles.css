@@ -6,14 +6,6 @@
     text-decoration: none;
 }
 
-.custom-container {
-    background-color: #eee;
-}
-
-.custom-topbar {
-    background-color: #222;
-}
-
 .custom-btn {
     color: #eee;
     transition: 0.3s;

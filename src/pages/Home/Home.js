@@ -3,40 +3,44 @@
  * Responsável por exibir a landing page com todos os produtos disponíveis
  */
 import React from "react";
+import CustomContainer from "../../components/CustomContainer/CustomContainer.js";
+import HeaderContainer from "../../components/HeaderContainer/HeaderContainer.js";
+import NavContainer from "../../components/NavContainer/NavContainer.js";
+import NavLink from "../../components/NavLink/NavLink.js";
+import Logo from "../../components/Logo/Logo.js";
+import MainContainer from "../../components/MainContainer/MainContainer.js";
+import MainBanner from "../../components/MainBanner/MainBanner.js";
+import Sidebar from "../../components/Sidebar/Sidebar.js";
+
 import { Link } from "react-router-dom";
 import { produtos } from "../../data/DataProducts";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/globalStyles.css";
 import "./HomeStyles.css";
 
 
 function Home() {
   return (
-    <div className="container-inline custom-container d-flex flex-column justify-content-center align-items-center">
+    <CustomContainer>
       {/* Cabeçalho - Logo e navegação */}
-      <header className="d-flex justify-content-between align-items-center py-4 px-2 px-md-4 custom-topbar w-100">
-        <div className="logo-astem img-fluid">
-          <a href="/">
-            <img src="#" alt="Logo" />
-          </a>
-        </div>
+      <HeaderContainer>
+        <Logo />
         {/* Menu de navegação */}
-        <nav className="d-flex px-1 px-sm-3">
-          <a className="btn btn-link custom-btn">teste1</a>
-          <a className="btn btn-link custom-btn">teste2</a>
-          <a className="btn btn-link custom-btn">teste3</a>
-          <a className="btn btn-link custom-btn">teste4</a>
-        </nav>
-      </header>
+        <NavContainer>
+          <NavLink>teste1</NavLink>
+          <NavLink>teste2</NavLink>
+          <NavLink>teste3</NavLink>
+          <NavLink>teste4</NavLink>
+        </NavContainer>
+      </HeaderContainer>
 
       {/* Conteúdo principal */}
-      <main className="container text-center d-flex flex-column justify-content-between align-items-center main-container p-2 w-100">
+      <MainContainer>
         {/* Banner principal com apresentação da empresa */}
-        <div className="main-banner flex-column flex-md-row justify-content-center text-center align-items-center d-flex my-5">
-          <aside className="sidebar me-0 me-md-5 my-4 text-center order-1 order-md-1">
+        <MainBanner>
+          <Sidebar>
             <h2 className="sidebar-title fs-1">Astem</h2>
-          </aside>
+          </Sidebar>
           <div className="main-container justify-content-center px-4 px-md-0 ms-0 ms-md-5 me-0 me-md-4 order-2 order-md-2">
             <p className="fs-5 mb-0">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -45,7 +49,7 @@ function Home() {
               qui facilis nisi, sed in!
             </p>
           </div>
-        </div>
+        </MainBanner>
 
         {/* Grid de produtos */}
         <div className="container main-products row g-4">
@@ -76,7 +80,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </main>
+      </MainContainer>
 
       {/* Rodapé - Informações de contato */}
       <footer className="container-fluid py-4 footer-container ">
@@ -103,7 +107,7 @@ function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </CustomContainer>
   );
 }
 
