@@ -11,6 +11,10 @@ import Logo from "../../components/Logo/Logo.js";
 import MainContainer from "../../components/MainContainer/MainContainer.js";
 import MainBanner from "../../components/MainBanner/MainBanner.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
+import HeroSection from "../../components/HeroSection/HeroSection.js";
+import MainProducts from "../../components/MainProducts/MainProducts.js";
+import FooterContainer from "../../components/FooterContainer/FooterContainer.js";
+import FooterContactItem from "../../components/FooterContactItem/FooterContactItem.js";
 
 import { Link } from "react-router-dom";
 import { produtos } from "../../data/DataProducts";
@@ -41,19 +45,19 @@ function Home() {
           <Sidebar>
             <h2 className="sidebar-title fs-1">Astem</h2>
           </Sidebar>
-          <div className="main-container justify-content-center px-4 px-md-0 ms-0 ms-md-5 me-0 me-md-4 order-2 order-md-2">
+          <HeroSection>
             <p className="fs-5 mb-0">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Praesentium eaque nulla reprehenderit minus veniam quos corporis
               repellat debitis rerum tempore consectetur modi quas aliquid natus
               qui facilis nisi, sed in!
             </p>
-          </div>
+          </HeroSection>
         </MainBanner>
 
         {/* Grid de produtos */}
-        <div className="container main-products row g-4">
-          {/* Mapeamento dos produtos - cada produto gera um card */}
+        <MainProducts>
+          {/* Geração dos cards de produtos dinâmicos */}
           {produtos.map((produto) => (
             <div
               key={produto.id}
@@ -67,8 +71,7 @@ function Home() {
                   alt={produto.nome}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{produto.nome}</h5>
-                  <p className="card-text">{produto.preco}</p>
+                  <h5 className="card-title py-2">{produto.nome}</h5>
                   <Link
                     to={`/produto/${produto.id}`}
                     className="btn custom-btn w-75 custom-btn-product"
@@ -79,36 +82,35 @@ function Home() {
               </div>
             </div>
           ))}
-        </div>
+        </MainProducts>
       </MainContainer>
 
       {/* Rodapé - Informações de contato */}
-      <footer className="container-fluid py-4 footer-container ">
-        <div className="row justify-content-center text-center">
-          {/* Seção WhatsApp */}
-          <div className="col-12 col-md-4 mb-4">
-            <i className="fab fa-whatsapp fs-3 text-success mb-2" />
-            <p className="mb-1 fs-5">WhatsApp</p>
-            <a className="btn custom-link" href="#">(61) 9 9999-9999</a>
-          </div>
-
-          {/* Seção E-mail */}
-          <div className="col-12 col-md-4 mb-4">
-            <i className="fas fa-envelope fs-3 text-success mb-2" />
-            <p className="mb-1 fs-5">E-mail</p>
-            <a className="btn custom-link" href="#">email@email.com</a>
-          </div>
-
-          {/* Seção Telefone */}
-          <div className="col-12 col-md-4 mb-4">
-            <i className="fas fa-phone fs-3 text-success mb-2" />
-            <p className="mb-1 fs-5">Telefone</p>
-            <a className="btn custom-link" href="#">(61) 9 9999-9999</a>
-          </div>
-        </div>
-      </footer>
+      <FooterContainer>
+        <FooterContactItem
+          iconClass="fab fa-whatsapp"
+          label="WhatsApp"
+          link="#"
+        >
+          (61) 9 9999-9999
+        </FooterContactItem>
+        <FooterContactItem
+          iconClass="fas fa-envelope"
+          label="E-mail"
+          link="#"
+        >
+          email@email.com
+        </FooterContactItem>
+        <FooterContactItem
+          iconClass="fas fa-phone"
+          label="Telefone"
+          link="#"
+        >
+          (61) 9 9999-9999
+        </FooterContactItem>
+      </FooterContainer>
     </CustomContainer>
   );
-}
+};
 
 export default Home;

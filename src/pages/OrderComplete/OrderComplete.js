@@ -4,6 +4,12 @@
  */
 import React from "react";
 
+import CustomContainer from "../../components/CustomContainer/CustomContainer.js";
+import HeaderContainer from "../../components/HeaderContainer/HeaderContainer.js";
+import NavContainer from "../../components/NavContainer/NavContainer.js";
+import NavLink from "../../components/NavLink/NavLink.js";
+import Logo from "../../components/Logo/Logo.js";
+
 import { useParams } from "react-router-dom";
 import { produtos } from "../../data/DataProducts";
 import { Link } from "react-router-dom";
@@ -20,22 +26,18 @@ function OrderComplete() {
     )
 
     return (
-        <div className="container-inline custom-container d-flex flex-column justify-content-center align-items-center">
+        <CustomContainer>
             {/* Cabeçalho - Logo e navegação */}
-            <header className="d-flex justify-content-between align-items-center py-4 px-2 px-md-4 custom-topbar w-100">
-                <div className="logo-astem img-fluid">
-                    <a href="/">
-                        <img src="#" alt="Logo" />
-                    </a>
-                </div>
+            <HeaderContainer>
+                <Logo />
                 {/* Menu de navegação */}
-                <nav className="d-flex px-1 px-sm-3">
-                    <a className="btn btn-link custom-btn">teste1</a>
-                    <a className="btn btn-link custom-btn">teste2</a>
-                    <a className="btn btn-link custom-btn">teste3</a>
-                    <a className="btn btn-link custom-btn">teste4</a>
-                </nav>
-            </header>
+                <NavContainer>
+                    <NavLink>teste1</NavLink>
+                    <NavLink>teste2</NavLink>
+                    <NavLink>teste3</NavLink>
+                    <NavLink>teste4</NavLink>
+                </NavContainer>
+            </HeaderContainer>
 
             {/* Conteúdo principal - Confirmação do pedido */}
             <main className="container-inline d-flex justify-content-center align-items-center text-center my-4 py-4 w-75">
@@ -95,7 +97,7 @@ function OrderComplete() {
                     </div>
                 </div>
             </footer>
-        </div>
+        </CustomContainer>
     );
 }
 

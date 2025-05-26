@@ -6,7 +6,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 49,90',
         imagem: '/images/imagem_monitor.jpg',
     },
     {
@@ -16,7 +15,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 69,90',
         imagem: '#',
     },
     {
@@ -26,7 +24,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 29,90',
         imagem: '#',
     },
     {
@@ -36,7 +33,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 99,90',
         imagem: '#',
     },
     {
@@ -46,7 +42,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 59,90',
         imgaem: '#',
     },
     {
@@ -56,7 +51,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 109,90',
         imgaem: '#',
     },
     {
@@ -66,7 +60,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 139,90',
         imgaem: '#',
     },
     {
@@ -76,7 +69,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     {
@@ -86,7 +78,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     {
@@ -96,7 +87,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     {
@@ -106,7 +96,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     {
@@ -116,7 +105,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     {
@@ -126,7 +114,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     {
@@ -136,7 +123,6 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        preco: 'R$ 159,90',
         imgaem: '#',
     },
     // adicione mais produtos aqui
