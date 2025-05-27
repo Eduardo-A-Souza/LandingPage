@@ -1,3 +1,4 @@
+// Componente para exibir o texto de apresentação da empresa na hero section
 import React from "react";
 import "./HeroSection.css";
 

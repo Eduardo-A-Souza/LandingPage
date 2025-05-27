@@ -1,8 +1,9 @@
 /*
  * Página inicial do site
- * Responsável por exibir a landing page com todos os produtos disponíveis
+ * Responsável por exibir a landing page e redirecionar para os produtos disponiveis
  */
 import React from "react";
+// import dos componentes usados na pagina 
 import CustomContainer from "../../components/CustomContainer/CustomContainer.js";
 import HeaderContainer from "../../components/HeaderContainer/HeaderContainer.js";
 import NavContainer from "../../components/NavContainer/NavContainer.js";
@@ -22,7 +23,7 @@ import { produtos } from "../../data/DataProducts";
 import "../../styles/globalStyles.css";
 import "./HomeStyles.css";
 
-
+// Componente principal da página Home
 function Home() {
   return (
     <CustomContainer>
@@ -87,6 +88,7 @@ function Home() {
 
       {/* Rodapé - Informações de contato */}
       <FooterContainer>
+        {/* Contato WhatsApp */}
         <FooterContactItem
           iconClass="fab fa-whatsapp"
           label="WhatsApp"
@@ -94,6 +96,7 @@ function Home() {
         >
           (61) 9 9999-9999
         </FooterContactItem>
+        {/* Contato E-mail */}
         <FooterContactItem
           iconClass="fas fa-envelope"
           label="E-mail"
@@ -101,6 +104,7 @@ function Home() {
         >
           email@email.com
         </FooterContactItem>
+        {/* Contato Telefone */}
         <FooterContactItem
           iconClass="fas fa-phone"
           label="Telefone"

@@ -1,9 +1,10 @@
+// componente que envolve toda a pagina
 import React from "react";
 import "./CustomContainer.css";
 
-const CustomContainer = ({ children }) => {
+const CustomContainer = ({ children, className = "" }) => {
     return (
-        <div className="container-inline custom-container d-flex flex-column justify-content-center align-items-center">
+        <div className={`container-inline custom-container d-flex flex-column justify-content-center align-items-center min-vh-100 ${className}`}>
             {children}
         </div>
     );

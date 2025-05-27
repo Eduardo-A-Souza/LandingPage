@@ -1,3 +1,4 @@
+// componente que envolve a barra de navegação da pagina 
 import React from "react";
 import "./NavContainer.css";
 

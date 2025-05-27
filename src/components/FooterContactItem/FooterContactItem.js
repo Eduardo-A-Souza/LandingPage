@@ -1,5 +1,7 @@
+// componente para os itens de contato do rodapé
 import React from "react";
 import "./FooterContactItem.css";
+import NavLink from "../NavLink/NavLink.js";
 
 const FooterContactItem = ( {iconClass, label, link, children} ) => {
     return (

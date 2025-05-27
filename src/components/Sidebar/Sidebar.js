@@ -1,3 +1,4 @@
+// componente para a barra lateral da pagina
 import React from "react";
 import "./Sidebar.css";
 

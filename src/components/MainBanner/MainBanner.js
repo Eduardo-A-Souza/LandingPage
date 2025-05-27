@@ -1,3 +1,4 @@
+// Componente para o banner principal da página
 import React from "react";
 import "./MainBanner.css";
 

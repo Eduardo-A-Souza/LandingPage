@@ -1,3 +1,4 @@
+// componente que envolve a lista de produtos da pagina
 import React from "react";
 import "./MainProducts.css";
 

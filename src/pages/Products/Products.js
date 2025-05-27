@@ -51,24 +51,24 @@ function Products() {
       <MainContainer>
         {/* Seção de título e imagem do produto */}
         <MainBanner>
-            {/* Título do produto */}
-            <Sidebar>
-              <h2 className="fs-1">{produtoSelecionado.nome}</h2>
-            </Sidebar>
-            {/* Imagem do produto */}
-            <HeroSection>
-              <img
-                src={produtoSelecionado.imagem}
-                alt="colocar equipamento depois"
-                className="img-fluid rounded"
-                width="400"
-              />
-            </HeroSection>
+          {/* Título do produto */}
+          <Sidebar>
+            <h2 className="fs-1">{produtoSelecionado.nome}</h2>
+          </Sidebar>
+          {/* Imagem do produto */}
+          <HeroSection>
+            <img
+              src={produtoSelecionado.imagem}
+              alt="colocar equipamento depois"
+              className="img-fluid rounded"
+              width="400"
+            />
+          </HeroSection>
         </MainBanner>
 
         {/* Descrição do produto e botão de pedido */}
-        <h2 className="">Descrição</h2>
-        <p className="mb-5">{produtoSelecionado.descricao}</p>
+        <h2 className="mt-5">Descrição</h2>
+        <p className="mb-5 mt-2">{produtoSelecionado.descricao}</p>
         <Link to={`/pedido/${produtoSelecionado.id}`} className="btn w-50 custom-btn custom-btnprod mb-5">
           Realizar pedido
         </Link>
@@ -76,6 +76,7 @@ function Products() {
 
       {/* Rodapé - Informações de contato */}
       <FooterContainer>
+        {/* Contato WhatsApp */}
         <FooterContactItem
           iconClass="fab fa-whatsapp"
           label="WhatsApp"
@@ -83,6 +84,7 @@ function Products() {
         >
           (61) 9 9999-9999
         </FooterContactItem>
+        {/* Contato E-mail */}
         <FooterContactItem
           iconClass="fas fa-envelope"
           label="E-mail"
@@ -90,6 +92,7 @@ function Products() {
         >
           email@email.com
         </FooterContactItem>
+        {/* Contato Telefone */}
         <FooterContactItem
           iconClass="fas fa-phone"
           label="Telefone"
