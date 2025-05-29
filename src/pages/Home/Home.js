@@ -94,7 +94,7 @@ function Home() {
           label="WhatsApp"
           link="#"
         >
-          (61) 9 9999-9999
+          (61) 99223-2377 
         </FooterContactItem>
         {/* Contato E-mail */}
         <FooterContactItem
@@ -102,7 +102,7 @@ function Home() {
           label="E-mail"
           link="#"
         >
-          email@email.com
+          atendimento@astembsb.com
         </FooterContactItem>
         {/* Contato Telefone */}
         <FooterContactItem
@@ -110,7 +110,14 @@ function Home() {
           label="Telefone"
           link="#"
         >
-          (61) 9 9999-9999
+          (61) 3361-3455
+        </FooterContactItem>
+        <FooterContactItem
+          iconClass="fas fa-map-marker-alt"
+          label="Endereço"
+          link="https://waze.com/ul/h6vjyhf8zw"
+        >
+          SIA Trecho 02 Lote 205/275 - Brasília/DF
         </FooterContactItem>
       </FooterContainer>
     </CustomContainer>

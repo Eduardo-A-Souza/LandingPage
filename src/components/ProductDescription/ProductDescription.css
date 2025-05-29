@@ -1,0 +1,19 @@
+.product-description-list {
+  max-width: 600px;
+  padding-left: 0;
+}
+
+.product-description-item {
+  list-style-type: none;
+  margin-bottom: 1rem; /* Espaçamento maior entre tópicos */
+}
+
+.product-description-bullet {
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin-right: 0.5rem;
+  color: #212529; /* Bootstrap text color */
+  min-width: 1.5em;
+  display: inline-block;
+  text-align: center;
+} 

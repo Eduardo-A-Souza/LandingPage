@@ -1,6 +1,7 @@
 .custom-btnprod {
     background-color: #444;
     color: #eee;
+    min-width: 180px;
 }
 
 .custom-btnprod:hover {

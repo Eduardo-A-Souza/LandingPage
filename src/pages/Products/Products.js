@@ -19,6 +19,8 @@ import FooterContactItem from "../../components/FooterContactItem/FooterContactI
 import MainBanner from "../../components/MainBanner/MainBanner.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import HeroSection from "../../components/HeroSection/HeroSection.js";
+import ProductDescription from "../../components/ProductDescription/ProductDescription";
+import ProductOrderPanel from "../../components/ProductOrderPanel/ProductOrderPanel";
 
 function Products() {
   // Obtém o ID do produto da URL
@@ -67,11 +69,25 @@ function Products() {
         </MainBanner>
 
         {/* Descrição do produto e botão de pedido */}
-        <h2 className="mt-5">Descrição</h2>
-        <p className="mb-5 mt-2">{produtoSelecionado.descricao}</p>
-        <Link to={`/pedido/${produtoSelecionado.id}`} className="btn w-50 custom-btn custom-btnprod mb-5">
-          Realizar pedido
-        </Link>
+        <ProductOrderPanel>
+          <div className="w-100 w-md-50">
+            <h2 className="my-5">Descrição</h2>
+            <ProductDescription descricao={produtoSelecionado.descricao} />
+          </div>
+          <div className="w-100 w-md-50 d-flex flex-column justify-content-center align-items-center mb-4 mb-md-0">
+            <input
+              type="number"
+              min={1}
+              defaultValue={1}
+              className="form-control mb-4"
+              style={{ maxWidth: 120 }}
+              aria-label="Quantidade"
+            />
+            <Link to={`/pedido/${produtoSelecionado.id}`} className="btn custom-btn custom-btnprod">
+              Realizar pedido
+            </Link>
+          </div>
+        </ProductOrderPanel>
       </MainContainer>
 
       {/* Rodapé - Informações de contato */}
@@ -82,7 +98,7 @@ function Products() {
           label="WhatsApp"
           link="#"
         >
-          (61) 9 9999-9999
+          (61) 99223-2377
         </FooterContactItem>
         {/* Contato E-mail */}
         <FooterContactItem
@@ -90,7 +106,7 @@ function Products() {
           label="E-mail"
           link="#"
         >
-          email@email.com
+          atendimento@astembsb.com
         </FooterContactItem>
         {/* Contato Telefone */}
         <FooterContactItem
@@ -98,7 +114,14 @@ function Products() {
           label="Telefone"
           link="#"
         >
-          (61) 9 9999-9999
+          (61) 3361-3455
+        </FooterContactItem>
+        <FooterContactItem
+          iconClass="fas fa-map-marker-alt"
+          label="Endereço"
+          link="https://waze.com/ul/h6vjyhf8zw"
+        >
+          SIA Trecho 02 Lote 205/275 - Brasília/DF
         </FooterContactItem>
       </FooterContainer>
     </CustomContainer>

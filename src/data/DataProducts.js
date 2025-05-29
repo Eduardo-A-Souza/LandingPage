@@ -1,12 +1,16 @@
 export const produtos = [
     {
         id: 1,
-        nome: 'Produto A',
-        descricao:
-            `Este é um produto de teste utilizado para demonstrar a 
-            renderização dinâmica na página. Informações reais sobre o 
-            produto serão adicionadas posteriormente.`,
-        imagem: '/images/imagem_monitor.jpg',
+        nome: 'Incubadora Vision 2286',
+        descricao: [
+            'Painel elevado LCD - Colorido 8,4"/ Monocolor 5,5"',
+            'Umidificação Servo Controle ou controle ativo',
+            'Servo controle de oxigênio',
+            'Suporte de altura fixa e ajustável via pedais',
+            'Oxímetro de pulso - SPO2 - (opcional)',
+            'Balança integrada (opcional)'
+        ],
+        imagem: '/images/IncubadoraVision_2286.png',
     },
     {
         id: 2,
@@ -42,7 +46,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 6,
@@ -51,7 +55,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 7,
@@ -60,7 +64,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 8,
@@ -69,7 +73,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 9,
@@ -78,7 +82,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 10,
@@ -87,7 +91,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 11,
@@ -96,7 +100,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 12,
@@ -105,7 +109,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 13,
@@ -114,7 +118,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     {
         id: 14,
@@ -123,7 +127,7 @@ export const produtos = [
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
             produto serão adicionadas posteriormente.`,
-        imgaem: '#',
+        imagem: '#',
     },
     // adicione mais produtos aqui
 ];
