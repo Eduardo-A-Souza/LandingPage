@@ -70,19 +70,11 @@ function Products() {
 
         {/* Descrição do produto e botão de pedido */}
         <ProductOrderPanel>
-          <div className="w-100 w-md-50">
-            <h2 className="my-5">Descrição</h2>
+          <div className="w-100 w-md-50 text-start">
+            <h2 className="my-5 ms-5">Descrição</h2>
             <ProductDescription descricao={produtoSelecionado.descricao} />
           </div>
           <div className="w-100 w-md-50 d-flex flex-column justify-content-center align-items-center mb-4 mb-md-0">
-            <input
-              type="number"
-              min={1}
-              defaultValue={1}
-              className="form-control mb-4"
-              style={{ maxWidth: 120 }}
-              aria-label="Quantidade"
-            />
             <Link to={`/pedido/${produtoSelecionado.id}`} className="btn custom-btn custom-btnprod">
               Realizar pedido
             </Link>
