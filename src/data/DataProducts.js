@@ -2,7 +2,7 @@ export const produtos = [
     {
         id: 1,
         nome: 'Incubadora Vision 2286',
-        categoria: 'incubadoras',
+        categoria: 'neonatologia',
         descricao: [
             'Painel elevado LCD - Colorido 8,4"/ Monocolor 5,5"',
             'Umidificação Servo Controle ou controle ativo',
@@ -16,7 +16,7 @@ export const produtos = [
     {
         id: 2,
         nome: 'Bilitron 3006',
-        categoria: 'fototerapia',
+        categoria: 'neonatologia',
         descricao: [
             '5 LEDs para fototerapia',
             'Integra com berço aquecido Ampla® e unidade híbrida Duetto',
@@ -28,7 +28,7 @@ export const produtos = [
     {
         id: 3,
         nome: 'Produto C',
-        categoria: 'outros',
+        categoria: 'neonatologia',
         descricao:
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 
@@ -38,7 +38,7 @@ export const produtos = [
     {
         id: 4,
         nome: 'Produto D',
-        categoria: 'outros',
+        categoria: 'neonatologia',
         descricao:
             `Este é um produto de teste utilizado para demonstrar a 
             renderização dinâmica na página. Informações reais sobre o 

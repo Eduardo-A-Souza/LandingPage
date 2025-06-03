@@ -11,8 +11,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* rota dinâmica usando id */}
-        <Route path='/Produto/:id' element={<Products />} />
+        {/* rota dinâmica para produtos por categoria */}
+        <Route path="/produtos/:categoria" element={<Products />} />
         <Route path="/pedido/:id" element={<OrderComplete />} />
       </Routes>
     </Router>

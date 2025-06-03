@@ -23,6 +23,24 @@ import { produtos } from "../../data/DataProducts";
 import "../../styles/globalStyles.css";
 import "./HomeStyles.css";
 
+const categorias = [
+  {
+    nome: "Fanem",
+    imagem: "/images/incubadoraVision_2286.png",
+    rota: "/produtos/neonatologia"
+  },
+  {
+    nome: "Protec",
+    imagem: "/images/incubadoraVision_2286.png",
+    rota: "#",
+  },
+  {
+    nome: "Magnamed",
+    imagem: "/images/incubadoraVision_2286.png",
+    rota: "#",
+  }
+];
+
 // Componente principal da página Home
 function Home() {
   return (
@@ -56,31 +74,23 @@ function Home() {
           </HeroSection>
         </MainBanner>
 
-        {/* Grid de produtos */}
-        <MainProducts>
-          {/* Geração dos cards de produtos dinâmicos */}
-          {produtos.map((produto) => (
-            <div
-              key={produto.id}
-              className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4"
-            >
-              {/* Card individual do produto */}
-              <div className="card h-100 box-product">
-                <img
-                  src={produto.imagem}
-                  className="card-img-top"
-                  alt={produto.nome}
-                />
-                <div className="card-body">
-                  <h5 className="card-title py-2">{produto.nome}</h5>
-                  <Link
-                    to={`/produto/${produto.id}`}
-                    className="btn custom-btn w-75 custom-btn-product"
-                  >
-                    Ver mais
-                  </Link>
+        {/* Grid de categorias */}
+        <MainProducts className="mb-5">
+        <h3 className="text-center my-5">Trabalhamos com</h3>
+          {categorias.map((cat) => (
+            <div key={cat.nome} className="d-flex col-sm-6 col-md-4 mb-4 px-2 px-md-3 justify-content-center">
+              <Link to={cat.rota} className="text-decoration-none">
+                <div className="card box-product custom-card-product">
+                  <div className="card-body d-flex flex-column align-items-center">
+                    <img
+                      src={cat.imagem}
+                      className="card-img-top mb-4"
+                      alt={cat.nome}
+                    />
+                    <h5 className="card-title py-2 fs-3">{cat.nome}</h5>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </MainProducts>
@@ -94,7 +104,7 @@ function Home() {
           label="WhatsApp"
           link="#"
         >
-          (61) 99223-2377 
+          (61) 99223-2377
         </FooterContactItem>
         {/* Contato E-mail */}
         <FooterContactItem
@@ -120,7 +130,7 @@ function Home() {
           SIA Trecho 02 Lote 205/275 - Brasília/DF
         </FooterContactItem>
       </FooterContainer>
-    </CustomContainer>
+    </CustomContainer >
   );
 };
 

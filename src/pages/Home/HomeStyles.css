@@ -7,11 +7,16 @@
     color: #eee;
 }
 
-.custom-btn-product {
-    background-color: #444;
+.custom-card-product {
+    background-color: #222;
     color: #eee;
+    text-decoration: none;
+    transition: 0.5s;
+    border: none;
 }
 
-.custom-btn-product:hover {
-    background-color: #666;
+.custom-card-product:hover {
+    transform: scale(1.1);
 }
+
+

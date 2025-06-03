@@ -3,10 +3,9 @@
  * Exibe informações detalhadas de um produto específico com base no ID da URL
  */
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { produtos } from "../../data/DataProducts";
-import { Link } from "react-router-dom"
-import "./ProductStyles.css"
+import "./ProductStyles.css";
 
 import CustomContainer from "../../components/CustomContainer/CustomContainer.js";
 import HeaderContainer from "../../components/HeaderContainer/HeaderContainer.js";
@@ -16,23 +15,20 @@ import Logo from "../../components/Logo/Logo.js";
 import MainContainer from "../../components/MainContainer/MainContainer.js";
 import FooterContainer from "../../components/FooterContainer/FooterContainer.js";
 import FooterContactItem from "../../components/FooterContactItem/FooterContactItem.js";
-import MainBanner from "../../components/MainBanner/MainBanner.js";
-import Sidebar from "../../components/Sidebar/Sidebar.js";
-import HeroSection from "../../components/HeroSection/HeroSection.js";
-import ProductDescription from "../../components/ProductDescription/ProductDescription";
-import ProductOrderPanel from "../../components/ProductOrderPanel/ProductOrderPanel";
+import MainProducts from "../../components/MainProducts/MainProducts.js";
 
 function Products() {
-  // Obtém o ID do produto da URL
-  const { id } = useParams();
-  // Busca o produto específico no array de produtos
-  const produtoSelecionado = produtos.find(
-    (produto) => produto.id === parseInt(id)
-  )
+  // Obtém a categoria da URL
+  const { categoria } = useParams();
 
-  // Se o produto não for encontrado, exibe mensagem de erro
-  if (!produtoSelecionado) {
-    return <p>este produto não foi encontrado </p>
+  // Filtra os produtos pela categoria
+  const produtosFiltrados = produtos.filter(
+    (produto) => produto.categoria && produto.categoria.toLowerCase() === categoria.toLowerCase()
+  );
+
+  // Se não houver produtos na categoria, exibe mensagem
+  if (produtosFiltrados.length === 0) {
+    return <p>Nenhum produto encontrado para esta categoria.</p>;
   }
 
   return (
@@ -40,7 +36,6 @@ function Products() {
       {/* Cabeçalho - Logo e navegação */}
       <HeaderContainer>
         <Logo />
-        {/* Menu de navegação */}
         <NavContainer>
           <NavLink>teste1</NavLink>
           <NavLink>teste2</NavLink>
@@ -49,42 +44,32 @@ function Products() {
         </NavContainer>
       </HeaderContainer>
 
-      {/* Conteúdo principal - Detalhes do produto */}
-      <MainContainer>
-        {/* Seção de título e imagem do produto */}
-        <MainBanner>
-          {/* Título do produto */}
-          <Sidebar>
-            <h2 className="fs-1">{produtoSelecionado.nome}</h2>
-          </Sidebar>
-          {/* Imagem do produto */}
-          <HeroSection>
-            <img
-              src={produtoSelecionado.imagem}
-              alt="colocar equipamento depois"
-              className="img-fluid rounded"
-              width="400"
-            />
-          </HeroSection>
-        </MainBanner>
-
-        {/* Descrição do produto e botão de pedido */}
-        <ProductOrderPanel>
-          <div className="w-100 w-md-50 text-start">
-            <h2 className="my-5 ms-5">Descrição</h2>
-            <ProductDescription descricao={produtoSelecionado.descricao} />
-          </div>
-          <div className="w-100 w-md-50 d-flex flex-column justify-content-center align-items-center mb-4 mb-md-0">
-            <Link to={`/pedido/${produtoSelecionado.id}`} className="btn custom-btn custom-btnprod">
-              Realizar pedido
-            </Link>
-          </div>
-        </ProductOrderPanel>
+      {/* Conteúdo principal */}
+      <MainContainer className="flex-fill">
+        <h2 className="text-center my-4">Produtos de {categoria}</h2>
+        <MainProducts>
+          {produtosFiltrados.map((produto) => (
+            <div key={produto.id} className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4">
+              <Link to={`/pedido/${produto.id}`} className="text-decoration-none">
+                <div className="card h-100 box-product custom-card-product">
+                  <div className="card-body d-flex flex-column align-items-center">
+                    <img
+                      src={produto.imagem}
+                      className="card-img-top mb-3"
+                      alt={produto.nome}
+                      style={{ height: "120px", objectFit: "cover", borderRadius: "8px" }}
+                    />
+                    <h5 className="card-title py-2">{produto.nome}</h5>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </MainProducts>
       </MainContainer>
 
       {/* Rodapé - Informações de contato */}
       <FooterContainer>
-        {/* Contato WhatsApp */}
         <FooterContactItem
           iconClass="fab fa-whatsapp"
           label="WhatsApp"
@@ -92,7 +77,6 @@ function Products() {
         >
           (61) 99223-2377
         </FooterContactItem>
-        {/* Contato E-mail */}
         <FooterContactItem
           iconClass="fas fa-envelope"
           label="E-mail"
@@ -100,7 +84,6 @@ function Products() {
         >
           atendimento@astembsb.com
         </FooterContactItem>
-        {/* Contato Telefone */}
         <FooterContactItem
           iconClass="fas fa-phone"
           label="Telefone"
