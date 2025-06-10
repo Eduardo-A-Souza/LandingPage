@@ -2,21 +2,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.box-product {
-    background-color: #222;
-    color: #eee;
-}
-
 .custom-card-product {
-    background-color: #222;
-    color: #eee;
-    text-decoration: none;
-    transition: 0.5s;
+    background-color: #F5F7FA;
     border: none;
+    transition: 0.3s;
 }
 
 .custom-card-product:hover {
-    transform: scale(1.1);
+    scale: 1.1;
 }
+
 
 

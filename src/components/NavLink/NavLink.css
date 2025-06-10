@@ -1,0 +1,31 @@
+.custom-link {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    /* Bootstrap's primary color */
+}
+
+.custom-link:hover {
+    text-decoration: none;
+}
+
+.custom-link::after {  
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: right;  /* começa da esquerda */
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.custom-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

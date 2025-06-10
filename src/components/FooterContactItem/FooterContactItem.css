@@ -1,0 +1,12 @@
+.custom-icon {
+    color: #ddd !important;
+}
+
+.custom-footer-link {
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.custom-footer-link:hover {
+    scale: 1.05;
+}

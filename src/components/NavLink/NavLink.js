@@ -4,7 +4,7 @@ import "./NavLink.css";
 
 const NavLink = ( {children, className = ""} ) => {
     return (
-        <a className={`btn btn-link custom-btn ${className}`}>{children}</a>
+        <a className={`px-3 py-4 custom-link ${className}`}>{children}</a>
     );
 };
 

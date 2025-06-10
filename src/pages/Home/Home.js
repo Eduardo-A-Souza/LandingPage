@@ -25,18 +25,18 @@ import "./HomeStyles.css";
 
 const categorias = [
   {
-    nome: "Fanem",
-    imagem: "/images/incubadoraVision_2286.png",
-    rota: "/produtos/neonatologia"
-  },
-  {
     nome: "Protec",
-    imagem: "/images/incubadoraVision_2286.png",
+    imagem: "/images/logo_protec.png",
     rota: "#",
   },
   {
+    nome: "Fanem",
+    imagem: "/images/logo_fanem.png",
+    rota: "/produtos/neonatologia"
+  },
+  {
     nome: "Magnamed",
-    imagem: "/images/incubadoraVision_2286.png",
+    imagem: "/images/logo_magnamed.png",
     rota: "#",
   }
 ];
@@ -50,10 +50,9 @@ function Home() {
         <Logo />
         {/* Menu de navegação */}
         <NavContainer>
-          <NavLink>teste1</NavLink>
-          <NavLink>teste2</NavLink>
-          <NavLink>teste3</NavLink>
-          <NavLink>teste4</NavLink>
+          <NavLink>Inicio</NavLink>
+          <NavLink>Produtos</NavLink>
+          <NavLink>Sobre</NavLink>
         </NavContainer>
       </HeaderContainer>
 
@@ -87,7 +86,6 @@ function Home() {
                       className="card-img-top mb-4"
                       alt={cat.nome}
                     />
-                    <h5 className="card-title py-2 fs-3">{cat.nome}</h5>
                   </div>
                 </div>
               </Link>

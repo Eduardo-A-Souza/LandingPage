@@ -6,9 +6,9 @@ import NavLink from "../NavLink/NavLink.js";
 const FooterContactItem = ( {iconClass, label, link, children} ) => {
     return (
         <div className="col-12 col-md-3 mb-4">
-            <i className={`${iconClass} fs-3 text-success mb-2`} />
+            <i className={`${iconClass} fs-3 text-success mb-2 custom-icon`} />
             <p className="mb-1 fs-5">{label}</p>
-            <a className="btn custom-link text-break" href={link}>{children}</a>
+            <a className="btn custom-footer-link text-break" href={link}>{children}</a>
         </div>
     );
 };
