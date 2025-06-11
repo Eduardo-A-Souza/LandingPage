@@ -1,4 +1,4 @@
-.custom-link {
+.link-underline-slide {
     position: relative;
     text-decoration: none;
     color: #000;
@@ -6,11 +6,11 @@
     /* Bootstrap's primary color */
 }
 
-.custom-link:hover {
+.link-underline-slide:hover {
     text-decoration: none;
 }
 
-.custom-link::after {  
+.link-underline-slide::after {  
     content: "";
     position: absolute;
     width: 100%;
@@ -20,12 +20,12 @@
     background-color: currentColor;
 
     transform: scaleX(0);
-    transform-origin: right;  /* começa da esquerda */
+    transform-origin: right; 
     transition: transform 0.3s ease-in-out;
     pointer-events: none;
 }
 
-.custom-link:hover::after {
+.link-underline-slide:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }

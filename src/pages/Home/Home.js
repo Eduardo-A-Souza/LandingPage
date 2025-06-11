@@ -25,14 +25,14 @@ import "./HomeStyles.css";
 
 const categorias = [
   {
-    nome: "Protec",
-    imagem: "/images/logo_protec.png",
-    rota: "#",
-  },
-  {
     nome: "Fanem",
     imagem: "/images/logo_fanem.png",
     rota: "/produtos/neonatologia"
+  },
+  {
+    nome: "Protec",
+    imagem: "/images/logo_protec.png",
+    rota: "#",
   },
   {
     nome: "Magnamed",
@@ -57,7 +57,8 @@ function Home() {
       </HeaderContainer>
 
       {/* Conteúdo principal */}
-      <MainContainer>
+      
+        <MainContainer>
         {/* Banner principal com apresentação da empresa */}
         <MainBanner>
           <Sidebar>
@@ -74,8 +75,8 @@ function Home() {
         </MainBanner>
 
         {/* Grid de categorias */}
-        <MainProducts className="mb-5">
         <h3 className="text-center my-5">Trabalhamos com</h3>
+        <MainProducts className="mb-5">
           {categorias.map((cat) => (
             <div key={cat.nome} className="d-flex col-sm-6 col-md-4 mb-4 px-2 px-md-3 justify-content-center">
               <Link to={cat.rota} className="text-decoration-none">
@@ -83,7 +84,7 @@ function Home() {
                   <div className="card-body d-flex flex-column align-items-center">
                     <img
                       src={cat.imagem}
-                      className="card-img-top mb-4"
+                      className="card-img-top mb-4 card-img-fixed"
                       alt={cat.nome}
                     />
                   </div>
@@ -93,7 +94,7 @@ function Home() {
           ))}
         </MainProducts>
       </MainContainer>
-
+      
       {/* Rodapé - Informações de contato */}
       <FooterContainer>
         {/* Contato WhatsApp */}
