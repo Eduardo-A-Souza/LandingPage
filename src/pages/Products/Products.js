@@ -45,12 +45,12 @@ function Products() {
       </HeaderContainer>
 
       {/* Conteúdo principal */}
-      <MainContainer className="flex-fill">
-        <h2 className="text-center my-4">Produtos de {categoria}</h2>
-        <Sidebar>
-          <h1></h1>
+      <h2 className="text-center my-5">Produtos de {categoria}</h2>
+      <MainContainer className="flex-fill" direction="row-reverse">
+        <Sidebar className="w-25 text-start">
+          <h1>teste</h1>
         </Sidebar>
-        <MainProducts>
+        <MainProducts className="w-75">
           {produtosFiltrados.map((produto) => (
             <div key={produto.id} className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4">
               <Link to={`/pedido/${produto.id}`} className="text-decoration-none">
@@ -69,6 +69,7 @@ function Products() {
             </div>
           ))}
         </MainProducts>
+
       </MainContainer>
 
       {/* Rodapé - Informações de contato */}

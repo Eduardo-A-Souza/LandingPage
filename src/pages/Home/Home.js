@@ -27,17 +27,17 @@ const categorias = [
   {
     nome: "Fanem",
     imagem: "/images/logo_fanem.png",
-    rota: "/produtos/neonatologia"
+    rota: "/produtos/fanem"
   },
   {
     nome: "Protec",
     imagem: "/images/logo_protec.png",
-    rota: "#",
+    rota: "/produtos/protec",
   },
   {
     nome: "Magnamed",
     imagem: "/images/logo_magnamed.png",
-    rota: "#",
+    rota: "/produtos/magnamed",
   }
 ];
 
