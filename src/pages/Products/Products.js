@@ -16,6 +16,7 @@ import MainContainer from "../../components/MainContainer/MainContainer.js";
 import FooterContainer from "../../components/FooterContainer/FooterContainer.js";
 import FooterContactItem from "../../components/FooterContactItem/FooterContactItem.js";
 import MainProducts from "../../components/MainProducts/MainProducts.js";
+import Sidebar from "../../components/Sidebar/Sidebar.js";
 
 function Products() {
   // Obtém a categoria da URL
@@ -37,16 +38,18 @@ function Products() {
       <HeaderContainer>
         <Logo />
         <NavContainer>
-          <NavLink>teste1</NavLink>
-          <NavLink>teste2</NavLink>
-          <NavLink>teste3</NavLink>
-          <NavLink>teste4</NavLink>
+          <NavLink>Inicio</NavLink>
+          <NavLink>Produtos</NavLink>
+          <NavLink>Sobre</NavLink>
         </NavContainer>
       </HeaderContainer>
 
       {/* Conteúdo principal */}
       <MainContainer className="flex-fill">
         <h2 className="text-center my-4">Produtos de {categoria}</h2>
+        <Sidebar>
+          <h1></h1>
+        </Sidebar>
         <MainProducts>
           {produtosFiltrados.map((produto) => (
             <div key={produto.id} className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4">

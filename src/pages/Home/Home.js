@@ -58,7 +58,7 @@ function Home() {
 
       {/* Conteúdo principal */}
       
-        <MainContainer>
+        <MainContainer className="my-0 my-sm-2 my-md-5">
         {/* Banner principal com apresentação da empresa */}
         <MainBanner>
           <Sidebar>
@@ -76,7 +76,7 @@ function Home() {
 
         {/* Grid de categorias */}
         <h3 className="text-center my-5">Trabalhamos com</h3>
-        <MainProducts className="mb-5">
+        <MainProducts className="my-0 my-sm-2 my-md-5">
           {categorias.map((cat) => (
             <div key={cat.nome} className="d-flex col-sm-6 col-md-4 mb-4 px-2 px-md-3 justify-content-center">
               <Link to={cat.rota} className="text-decoration-none">
