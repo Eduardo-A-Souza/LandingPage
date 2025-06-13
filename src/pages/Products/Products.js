@@ -38,19 +38,27 @@ function Products() {
       <HeaderContainer>
         <Logo />
         <NavContainer>
-          <NavLink>Inicio</NavLink>
-          <NavLink>Produtos</NavLink>
-          <NavLink>Sobre</NavLink>
+          <NavLink className="px-3 py-4">Inicio</NavLink>
+          <NavLink className="px-3 py-4">Produtos</NavLink>
+          <NavLink className="px-3 py-4">Sobre</NavLink>
         </NavContainer>
       </HeaderContainer>
 
       {/* Conteúdo principal */}
       <h2 className="text-center my-5">Produtos de {categoria}</h2>
-      <MainContainer className="flex-fill" direction="row-reverse">
-        <Sidebar className="w-25 text-start">
-          <h1>teste</h1>
+      <MainContainer className="flex-fill px-5" direction="row-reverse" containerClass="container-fluid">
+        <Sidebar className="text-start mx-4">
+          <h3 className="fs-1 pb-2">Classes</h3>
+          <ul className="text-start">
+            <li>
+              <NavLink className="py-2">Neonatologia</NavLink>
+            </li>
+            <li>
+              <NavLink className="py-2">hospitalar</NavLink>
+            </li>
+          </ul>
         </Sidebar>
-        <MainProducts className="w-75">
+        <MainProducts className="m-3">
           {produtosFiltrados.map((produto) => (
             <div key={produto.id} className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4">
               <Link to={`/pedido/${produto.id}`} className="text-decoration-none">
@@ -58,9 +66,8 @@ function Products() {
                   <div className="card-body d-flex flex-column align-items-center">
                     <img
                       src={produto.imagem}
-                      className="card-img-top mb-3"
                       alt={produto.nome}
-                      style={{ height: "120px", objectFit: "cover", borderRadius: "8px" }}
+                      className="product-img card-img-top mb-3"
                     />
                     <h5 className="card-title py-2">{produto.nome}</h5>
                   </div>
@@ -69,7 +76,6 @@ function Products() {
             </div>
           ))}
         </MainProducts>
-
       </MainContainer>
 
       {/* Rodapé - Informações de contato */}
@@ -103,7 +109,7 @@ function Products() {
           SIA Trecho 02 Lote 205/275 - Brasília/DF
         </FooterContactItem>
       </FooterContainer>
-    </CustomContainer>
+    </CustomContainer >
   );
 }
 

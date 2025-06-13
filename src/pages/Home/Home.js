@@ -50,9 +50,9 @@ function Home() {
         <Logo />
         {/* Menu de navegação */}
         <NavContainer>
-          <NavLink>Inicio</NavLink>
-          <NavLink>Produtos</NavLink>
-          <NavLink>Sobre</NavLink>
+          <NavLink className="px-3 py-4">Inicio</NavLink>
+          <NavLink className="px-3 py-4">Produtos</NavLink>
+          <NavLink className="px-3 py-4">Sobre</NavLink>
         </NavContainer>
       </HeaderContainer>
 

@@ -11,7 +11,7 @@ export const produtos = [
             'Oxímetro de pulso - SPO2 - (opcional)',
             'Balança integrada (opcional)'
         ],
-        imagem: '/images/IncubadoraVision_2286.webp',
+        imagem: '/images/incubadora_vision_2286.png',
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const produtos = [
             'Ventosas para fixação em superfície plana',
             'Ajuste de altura do pedestal',
         ],
-        imagem: '/images/Bilitron_3006.webp',
+        imagem: '/images/4. Bilitron® 3006.png',
     },
     {
         id: 3,
@@ -37,27 +37,37 @@ export const produtos = [
             'Alça para transporte',
             'Sensor de temperatura de pele T1 (opcional)',
         ],
-        imagem: '/images/Bilitron_Bed_4006.webp',
+        imagem: '/images/0. Bilitron® Bed 4006.png',
     },
     {
         id: 4,
-        nome: 'Produto D',
+        nome: 'Biliron Sky 5006 - BSI',
         categoria: 'fanem',
-        descricao:
-            `Este é um produto de teste utilizado para demonstrar a 
-            renderização dinâmica na página. Informações reais sobre o 
-            produto serão adicionadas posteriormente.`,
-        imagem: '#',
+        descricao:  [
+            '15 LEDs para fototerapia',
+            'Fonte de emissão removível e com rotação de 360º',
+            'Ventosas para fixação em superfície plana', 
+            'Alças laterais para ajuste de posicionamento',
+            'Iluminação auxiliar', 
+            'Ajuste de altura do pedesta',
+        ],
+        imagem: '/images/9. Bilitron® Sky 5006 - BSI.png',
     },
     {
         id: 5,
-        nome: 'Produto E',
-        categoria: 'protec',
-        descricao:
-            `Este é um produto de teste utilizado para demonstrar a 
-            renderização dinâmica na página. Informações reais sobre o 
-            produto serão adicionadas posteriormente.`,
-        imagem: '#',
+        nome: 'Babypuff 1020',
+        categoria: 'fanem',
+        descricao: [
+            'Ajuste da PIP e PEEP com leitura em mano-vacuômetro',
+            'Integra com berço aquecido Ampla® e incubadora de transporte IT 158®',
+            'Estrutura de plástico com alça para transporte',
+            'Versões: portátil, parede, mesa e com base móvel',
+            'Blender para mistura de gases (opcional)',
+            '5 tamanhos de máscaras facilitam o manuseio e',   
+            'permitem completa adaptação e visualização da boca',   
+            'e narinas do paciente',
+        ],
+        imagem: '/images/1 Babypuff® 1020.png',
     },
     {
         id: 6,

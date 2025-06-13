@@ -4,7 +4,7 @@ import "./NavLink.css";
 
 const NavLink = ({ children, className = "" }) => {
     return (
-        <a className={`px-3 py-4 link-underline-slide${className}`}>
+        <a className={`link-underline-slide ${className}`}>
             <span className="">
                 {children}
             </span>

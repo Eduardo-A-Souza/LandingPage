@@ -1,15 +1,12 @@
-.custom-btnprod {
-    background-color: #444;
-    color: #eee;
-    min-width: 180px;
+.product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* ou 4 / 3 */
+    object-fit: contain;
+    border-radius: 8px;
 }
 
-.custom-btnprod:hover {
-    background-color: #666;
-}
-
-@media (min-width: 835px) {
-    .custom-btnprod {
-        width: 25% !important;
-    }
+.btn-link {
+    text-decoration: none;
+    color: #222 !important;
 }
