@@ -71,23 +71,31 @@ export const produtos = [
     },
     {
         id: 6,
-        nome: 'Produto F',
-        categoria: 'protec',
-        descricao:
-            `Este é um produto de teste utilizado para demonstrar a 
-            renderização dinâmica na página. Informações reais sobre o 
-            produto serão adicionadas posteriormente.`,
-        imagem: '#',
+        nome: 'Incubadora Neonatal 2386',
+        categoria: 'fanem',
+        descricao: [
+            'Painel elevado touch screen',
+            'Cúpula de acrílico transparente com paredes duplas, 05 portinholas, 08 passa-tubos simples, 1 passa-tubo duplo e manga-íris', 
+            'Sistema de autoteste automático',
+            'Leito giratório em 360º', 
+            'Balança integrada', 
+            'Abertura da parte superior da cúpula',
+        ],
+        imagem: '/images/1 Incubadora neonatal 2386.png',
     },
     {
         id: 7,
-        nome: 'Produto G',
-        categoria: 'protec',
-        descricao:
-            `Este é um produto de teste utilizado para demonstrar a 
-            renderização dinâmica na página. Informações reais sobre o 
-            produto serão adicionadas posteriormente.`,
-        imagem: '#',
+        nome: 'Bercinho Oval baby',
+        categoria: 'fanem',
+        descricao: [
+            'Cesto de acrílico transparente em formato oval', 
+            'Alça ergonômica para transporte', 
+            'Inclinação com trava de segurança: horizontal, proclive e trendelenburg', 
+            'Compartimentos frontal e posterior para armazenamento de materiais', 
+            'Colchão de espuma selado', 
+            'Rodízios suaves com trava',
+        ],
+        imagem: '/images/1_ Berço Oval baby .png',
     },
     {
         id: 8,

@@ -57,8 +57,8 @@ function Home() {
       </HeaderContainer>
 
       {/* Conteúdo principal */}
-      
-        <MainContainer className="my-0 my-sm-2 my-md-5">
+
+      <MainContainer className="my-0 my-sm-2 my-md-5">
         {/* Banner principal com apresentação da empresa */}
         <MainBanner>
           <Sidebar>
@@ -66,10 +66,7 @@ function Home() {
           </Sidebar>
           <HeroSection>
             <p className="fs-5 mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Praesentium eaque nulla reprehenderit minus veniam quos corporis
-              repellat debitis rerum tempore consectetur modi quas aliquid natus
-              qui facilis nisi, sed in!
+              Thales Baima é uma inspiração. Com sensibilidade e propósito, ele impulsiona a vida de quem mais precisa, atuando exatamente onde a ajuda faz a maior diferença. Seu compromisso com o bem-estar do outro transforma realidades e inspira todos ao seu redor. Onde há necessidade, Thales leva força, esperança e mudança.
             </p>
           </HeroSection>
         </MainBanner>
@@ -94,7 +91,7 @@ function Home() {
           ))}
         </MainProducts>
       </MainContainer>
-      
+
       {/* Rodapé - Informações de contato */}
       <FooterContainer>
         {/* Contato WhatsApp */}

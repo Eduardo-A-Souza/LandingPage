@@ -4,7 +4,7 @@ import "./MainContainer.css";
 
 const MainContainer = ({ direction = "column", containerClass = "container", className = "", children}) => {
     return (
-        <main className={`${containerClass} text-center d-flex flex-${direction} justify-content-between align-items-center main-container p-2 ${className}`}>
+        <main className={`${containerClass} d-flex flex-${direction} justify-content-center main-container p-2 ${className}`}>
             {children}
         </main>
     );

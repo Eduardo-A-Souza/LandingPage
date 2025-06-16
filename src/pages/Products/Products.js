@@ -45,9 +45,9 @@ function Products() {
       </HeaderContainer>
 
       {/* Conteúdo principal */}
-      <h2 className="text-center my-5">Produtos de {categoria}</h2>
-      <MainContainer className="flex-fill px-5" direction="row-reverse" containerClass="container-fluid">
-        <Sidebar className="text-start mx-4">
+      <h2 className="text-center my-5">Produtos {categoria}</h2>
+      <MainContainer className="flex-fill px-5" direction="row-reverse"  containerClass="container-fluid">
+        <Sidebar className="text-start mx-4 px-3">
           <h3 className="fs-1 pb-2">Classes</h3>
           <ul className="text-start">
             <li>

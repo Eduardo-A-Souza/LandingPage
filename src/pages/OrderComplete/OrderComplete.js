@@ -32,10 +32,14 @@ function OrderComplete() {
         <CustomContainer>
             <HeaderContainer>
                 <Logo />
-                
+                <NavContainer>
+                    <NavLink className="px-3 py-4">Inicio</NavLink>
+                    <NavLink className="px-3 py-4">Produtos</NavLink>
+                    <NavLink className="px-3 py-4">Sobre</NavLink>
+                </NavContainer>
             </HeaderContainer>
             <MainContainer className="flex-fill">
-
+                
             </MainContainer>
             <FooterContainer>
                 {/* Contato WhatsApp */}
@@ -44,7 +48,7 @@ function OrderComplete() {
                     label="WhatsApp"
                     link="#"
                 >
-                    (61) 99223-2377 
+                    (61) 99223-2377
                 </FooterContactItem>
                 {/* Contato E-mail */}
                 <FooterContactItem

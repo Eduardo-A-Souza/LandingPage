@@ -2,9 +2,9 @@
 import React from "react";
 import "./Sidebar.css";
 
-const Sidebar = ( {children} ) => {
+const Sidebar = ( { children, className = "" } ) => {
     return (
-        <aside className="sidebar me-0 me-md-5 my-4 text-center order-1 order-md-1">
+        <aside className={`sidebar me-0 me-md-5 my-4 order-1 order-md-1 ${className}`}>
             {children}
         </aside>
     )
