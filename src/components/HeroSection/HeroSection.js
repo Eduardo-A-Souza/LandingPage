@@ -2,9 +2,9 @@
 import React from "react";
 import "./HeroSection.css";
 
-const HeroSection = ( {children} ) => {
+const HeroSection = ( { children, className = "" } ) => {
     return (
-        <div className="main-container justify-content-center px-4 px-md-0 ms-0 ms-md-5 me-0 me-md-4 order-2 order-md-2">
+        <div className={`main-container px-4 px-md-0 ms-0 ms-md-5 me-0 me-md-4 order-2 order-md-2 ${className}`}>
             {children}
         </div>
     );
