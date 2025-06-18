@@ -2,7 +2,7 @@
 import React from "react";
 import "./MainProducts.css";
 
-const MainProducts = ( {children, className = ""} ) => {
+const MainProducts = ( { children, className = ""} ) => {
     return (
         <div className={`container main-products row ${className}`}>
             {children}

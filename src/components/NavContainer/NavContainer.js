@@ -2,9 +2,9 @@
 import React from "react";
 import "./NavContainer.css";
 
-const NavContainer = ( {children} ) => {
+const NavContainer = ( { children, className = "" } ) => {
     return (
-        <nav className="d-flex px-1 px-sm-3">
+        <nav className={`d-flex ${className}`}>
             {children}
         </nav>
     );

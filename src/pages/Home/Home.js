@@ -18,7 +18,6 @@ import FooterContainer from "../../components/FooterContainer/FooterContainer.js
 import FooterContactItem from "../../components/FooterContactItem/FooterContactItem.js";
 
 import { Link } from "react-router-dom";
-import { produtos } from "../../data/DataProducts";
 
 import "../../styles/globalStyles.css";
 import "./HomeStyles.css";

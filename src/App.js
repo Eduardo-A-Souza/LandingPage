@@ -4,7 +4,7 @@ import './styles/globalStyles.css';
 
 import Home from './pages/Home/Home.js';
 import Products from './pages/Products/Products.js';
-import OrderComplete from './pages/OrderComplete/OrderComplete.js';
+import ProductDetails from './pages/ProductDetails/ProductDetails.js';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* rota dinâmica para produtos por categoria */}
         <Route path="/produtos/:categoria" element={<Products />} />
-        <Route path="/pedido/:id" element={<OrderComplete />} />
+        <Route path="/pedido/:id" element={<ProductDetails />} />
       </Routes>
     </Router>
   );
