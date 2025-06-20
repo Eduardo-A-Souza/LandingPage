@@ -46,10 +46,13 @@ function Home() {
     <CustomContainer>
       {/* Cabeçalho - Logo e navegação */}
       <HeaderContainer>
-        <Logo />
+        <Logo 
+          src="/images/Logo_astem_header.jpg"
+          alt="Logo_Astem"
+        />
         {/* Menu de navegação */}
         <NavContainer>
-          <NavLink className="px-3 py-4">Inicio</NavLink>
+          <NavLink className="px-3 py-4" href="/">Inicio</NavLink>
           <NavLink className="px-3 py-4">Produtos</NavLink>
           <NavLink className="px-3 py-4">Sobre</NavLink>
         </NavContainer>
@@ -61,7 +64,7 @@ function Home() {
         {/* Banner principal com apresentação da empresa */}
         <MainBanner>
           <Sidebar>
-            <h2 className="sidebar-title fs-1">Astem</h2>
+            <img src="/images/Logo_astem_main.png" alt="Logo_Astem" className="w-100"/>
           </Sidebar>
           <HeroSection>
             <p className="fs-5 mb-0">
@@ -71,7 +74,7 @@ function Home() {
         </MainBanner>
 
         {/* Grid de categorias */}
-        <h3 className="text-center my-5">Trabalhamos com</h3>
+        <h3 className="text-center my-5">Quem representamos</h3>
         <MainProducts className="my-0 my-sm-2 my-md-5">
           {categorias.map((cat) => (
             <div key={cat.nome} className="d-flex col-sm-6 col-md-4 mb-4 px-2 px-md-3 justify-content-center">

@@ -36,9 +36,12 @@ function Products() {
     <CustomContainer>
       {/* Cabeçalho - Logo e navegação */}
       <HeaderContainer>
-        <Logo />
+        <Logo
+          src="/images/Logo_astem_header.jpg"
+          alt="Logo_Astem"
+        />
         <NavContainer>
-          <NavLink className="px-3 py-4">Inicio</NavLink>
+          <NavLink className="px-3 py-4" href="/">Inicio</NavLink>
           <NavLink className="px-3 py-4">Produtos</NavLink>
           <NavLink className="px-3 py-4">Sobre</NavLink>
         </NavContainer>
@@ -46,7 +49,7 @@ function Products() {
 
       {/* Conteúdo principal */}
       <h2 className="text-center my-5">Produtos {categoria}</h2>
-      <MainContainer className="flex-fill px-5" direction="row-reverse"  containerClass="container-fluid">
+      <MainContainer className="flex-fill px-5" direction="row-reverse" containerClass="container-fluid">
         <Sidebar className="text-start mx-4 px-3">
           <h3 className="fs-1 pb-2">Classes</h3>
           <ul className="text-start">
