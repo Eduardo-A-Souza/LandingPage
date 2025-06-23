@@ -8,16 +8,11 @@
 }
 
 .custom-btn {
-    color: #eee;
+    color: #000;
+    background-color: #fff;
     transition: 0.3s;
     text-decoration: none;
     border: none;
-}
-
-.custom-btn:hover {
-    color: #eee;
-    transform: scale(1.1);
-    text-decoration: none;
 }
 
 .custom-link {
@@ -29,4 +24,23 @@
     color: #444;
     transform: scale(1.1);
     text-decoration: underline;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-item {
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.drodown-item:hover {
+    color: #777 !important;
+}
+
+.dropdown-item:active {
+    background-color: #fff;
+    color: white;
 }

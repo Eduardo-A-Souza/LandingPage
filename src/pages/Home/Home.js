@@ -46,14 +46,29 @@ function Home() {
     <CustomContainer>
       {/* Cabeçalho - Logo e navegação */}
       <HeaderContainer>
-        <Logo 
+        <Logo
           src="/images/Logo_astem_header.jpg"
           alt="Logo_Astem"
         />
         {/* Menu de navegação */}
         <NavContainer>
           <NavLink className="px-3 py-4" href="/">Inicio</NavLink>
-          <NavLink className="px-3 py-4">Produtos</NavLink>
+          <NavLink className="dropdown px-3 py-4">
+            <button
+              className="custom-btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Produtos
+            </button>
+
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="produtos/Fanem">Fanem</a></li>
+              <li><a className="dropdown-item" href="produtos/Protec">Protec</a></li>
+              <li><a className="dropdown-item" href="produtos/Magnamed">Magnamed</a></li>
+            </ul>
+          </NavLink>
           <NavLink className="px-3 py-4">Sobre</NavLink>
         </NavContainer>
       </HeaderContainer>
@@ -63,12 +78,12 @@ function Home() {
       <MainContainer className="my-0 my-sm-2 my-md-5">
         {/* Banner principal com apresentação da empresa */}
         <MainBanner>
-          <Sidebar>
-            <img src="/images/Logo_astem_main.png" alt="Logo_Astem" className="w-100"/>
+          <Sidebar className="w-50">
+            <img src="/images/Logo_astem_main.png" alt="Logo_Astem" className="w-50" />
           </Sidebar>
-          <HeroSection>
-            <p className="fs-5 mb-0">
-              Thales Baima é uma inspiração. Com sensibilidade e propósito, ele impulsiona a vida de quem mais precisa, atuando exatamente onde a ajuda faz a maior diferença. Seu compromisso com o bem-estar do outro transforma realidades e inspira todos ao seu redor. Onde há necessidade, Thales leva força, esperança e mudança.
+          <HeroSection className="w-50">
+            <p className="fs-4 mb-0">
+              Soluções que respeitam à Vida             
             </p>
           </HeroSection>
         </MainBanner>
