@@ -4,7 +4,7 @@ import "./MainProducts.css";
 
 const MainProducts = ( { children, className = ""} ) => {
     return (
-        <div className={`container main-products row ${className}`}>
+        <div className={`container row ${className}`}>
             {children}
         </div>
     );

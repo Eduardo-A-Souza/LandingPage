@@ -63,7 +63,7 @@ function Home() {
               Produtos
             </button>
 
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu ">
               <li><a className="dropdown-item" href="produtos/Fanem">Fanem</a></li>
               <li><a className="dropdown-item" href="produtos/Protec">Protec</a></li>
               <li><a className="dropdown-item" href="produtos/Magnamed">Magnamed</a></li>
@@ -78,10 +78,10 @@ function Home() {
       <MainContainer className="my-0 my-sm-2 my-md-5">
         {/* Banner principal com apresentação da empresa */}
         <MainBanner>
-          <Sidebar className="w-50">
-            <img src="/images/Logo_astem_main.png" alt="Logo_Astem" className="w-50" />
+          <Sidebar className="w-75 w-md-50 mb-4" >
+            <img src="/images/Logo_astem_main.png" alt="Logo_Astem" className="w-75 w-md-50" />
           </Sidebar>
-          <HeroSection className="w-50">
+          <HeroSection className="w-75 w-md-50">
             <p className="fs-4 mb-0">
               Soluções que respeitam à Vida             
             </p>

@@ -85,9 +85,9 @@ function OrderComplete() {
                 </div>
 
                 <h4 className="fs-3">Outros:</h4>
-                <MainProducts className="d-flex flex-wrap justify-content-around">
+                <MainProducts className="d-flex flex-wrap justify-content-around ">
                     {outrosProdutos.map((produto) => (
-                        <div key={produto.id} className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4">
+                        <div key={produto.id} className="col-sm-6 col-lg-3 mb-4 px-4">
                             <Link to={`/pedido/${produto.id}`} className="text-decoration-none">
                                 <div className="card h-100 box-product custom-card-product">
                                     <div className="card-body d-flex flex-column align-items-center">
