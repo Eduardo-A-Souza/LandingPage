@@ -61,7 +61,7 @@ function Products() {
             </li>
           </ul>
         </Sidebar>
-        <MainProducts className="m-3">
+        <MainProducts className="m-3" display="row">
           {produtosFiltrados.map((produto) => (
             <div key={produto.id} className="col-sm-6 col-md-4 col-lg-3 mb-4 px-4">
               <Link to={`/pedido/${produto.id}`} className="text-decoration-none">

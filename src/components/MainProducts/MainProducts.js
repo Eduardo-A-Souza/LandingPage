@@ -2,9 +2,9 @@
 import React from "react";
 import "./MainProducts.css";
 
-const MainProducts = ( { children, className = ""} ) => {
+const MainProducts = ( { children, className = "", display = "d-flex"} ) => {
     return (
-        <div className={`container row ${className}`}>
+        <div className={`container ${display} ${className}`}>
             {children}
         </div>
     );

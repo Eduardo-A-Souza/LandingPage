@@ -18,3 +18,7 @@
     /* ou 250px, ajuste como quiser */
     object-fit: cover;
 }
+
+.dropdown-item {
+    height: 30px;
+}

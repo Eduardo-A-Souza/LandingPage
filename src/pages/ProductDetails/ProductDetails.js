@@ -60,9 +60,9 @@ function OrderComplete() {
 
             {/* Conteúdo principal */}
             <MainContainer className="flex-fill py-5">
-                <div className="d-flex flex-row justify-content-around align-items-start">
-                    <Sidebar className="w-50">
-                        <h2 className="text-center fs-3 pb-3">{produtoSelecionado.nome}</h2>
+                <div className="d-flex flex-column flex-md-row justify-content-around align-items-center align-items-md-start info-products mb-4">
+                    <Sidebar className="w-75 w-md-50">
+                        <h2 className="text-center fs-1 md-fs-3 pb-3">{produtoSelecionado.nome}</h2>
                         <img
                             src={produtoSelecionado.imagem}
                             alt={produtoSelecionado.nome}
@@ -84,10 +84,10 @@ function OrderComplete() {
                     </HeroSection>
                 </div>
 
-                <h4 className="fs-3">Outros:</h4>
-                <MainProducts className="d-flex flex-wrap justify-content-around ">
+                <h4 className="fs-3 mb-4 mx-4 md-mx-0">Outros:</h4>
+                <MainProducts className="scroll-produtos d-flex overflow-auto">
                     {outrosProdutos.map((produto) => (
-                        <div key={produto.id} className="col-sm-6 col-lg-3 mb-4 px-4">
+                        <div key={produto.id} className=" mb-4 px-4 produto-card mx-4">
                             <Link to={`/pedido/${produto.id}`} className="text-decoration-none">
                                 <div className="card h-100 box-product custom-card-product">
                                     <div className="card-body d-flex flex-column align-items-center">
@@ -96,7 +96,7 @@ function OrderComplete() {
                                             alt={produto.nome}
                                             className="product-img card-img-top mb-3"
                                         />
-                                        <h5 className="card-title py-2">{produto.nome}</h5>
+                                        <p className="text-center m-0">{produto.nome}</p>
                                     </div>
                                 </div>
                             </Link>

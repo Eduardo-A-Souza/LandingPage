@@ -1,0 +1,14 @@
+.scroll-produtos {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    /* Firefox */
+}
+
+.produto-card {
+    flex: 0 0 auto;
+    /* impede que os cards encolham ou cresçam */
+    width: 200px;
+}
+

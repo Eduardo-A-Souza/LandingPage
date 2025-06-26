@@ -53,9 +53,9 @@ function Home() {
         {/* Menu de navegação */}
         <NavContainer>
           <NavLink className="px-3 py-4" href="/">Inicio</NavLink>
-          <NavLink className="dropdown px-3 py-4">
+          <NavLink className="dropdown  ">
             <button
-              className="custom-btn dropdown-toggle"
+              className="custom-btn dropdown-toggle px-3 py-4"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -69,7 +69,7 @@ function Home() {
               <li><a className="dropdown-item" href="produtos/Magnamed">Magnamed</a></li>
             </ul>
           </NavLink>
-          <NavLink className="px-3 py-4">Sobre</NavLink>
+          <NavLink className="px-3 py-4" href="/sobre">Sobre</NavLink>
         </NavContainer>
       </HeaderContainer>
 
@@ -90,9 +90,9 @@ function Home() {
 
         {/* Grid de categorias */}
         <h3 className="text-center my-5">Quem representamos</h3>
-        <MainProducts className="my-0 my-sm-2 my-md-5">
+        <MainProducts className="my-0 my-sm-2 my-md-5" display="row">
           {categorias.map((cat) => (
-            <div key={cat.nome} className="d-flex col-sm-6 col-md-4 mb-4 px-2 px-md-3 justify-content-center">
+            <div key={cat.nome} className="d-flex col-sm-6 col-md-4 mb-4 px-2 px-md-4 justify-content-center">
               <Link to={cat.rota} className="text-decoration-none">
                 <div className="card box-product custom-card-product">
                   <div className="card-body d-flex flex-column align-items-center">
@@ -100,7 +100,7 @@ function Home() {
                       src={cat.imagem}
                       className="card-img-top mb-4 card-img-fixed"
                       alt={cat.nome}
-                    />
+                    />  
                   </div>
                 </div>
               </Link>
