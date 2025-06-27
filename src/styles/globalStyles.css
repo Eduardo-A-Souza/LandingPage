@@ -28,12 +28,15 @@
 
 .dropdown-menu {
     border: none;
+
+    min-width: 10px !important;
 }
 
 .dropdown-item {
     color: #000;
     background-color: #fff;
     transition: 0.3s;
+    width: 100% !important;
 }
 
 .drodown-item:hover {

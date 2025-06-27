@@ -53,7 +53,7 @@ function Home() {
         {/* Menu de navegação */}
         <NavContainer>
           <NavLink className="px-3 py-4" href="/">Inicio</NavLink>
-          <NavLink className="dropdown  ">
+          <NavLink className="dropdown">
             <button
               className="custom-btn dropdown-toggle px-3 py-4"
               type="button"
@@ -63,7 +63,7 @@ function Home() {
               Produtos
             </button>
 
-            <ul className="dropdown-menu ">
+            <ul className="dropdown-menu px-3">
               <li><a className="dropdown-item" href="produtos/Fanem">Fanem</a></li>
               <li><a className="dropdown-item" href="produtos/Protec">Protec</a></li>
               <li><a className="dropdown-item" href="produtos/Magnamed">Magnamed</a></li>
