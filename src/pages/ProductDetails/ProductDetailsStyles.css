@@ -9,6 +9,6 @@
 .produto-card {
     flex: 0 0 auto;
     /* impede que os cards encolham ou cresçam */
-    width: 200px;
+    width: 300px;
 }
 
