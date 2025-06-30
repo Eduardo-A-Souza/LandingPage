@@ -14,8 +14,8 @@ import MainBanner from "../../components/MainBanner/MainBanner.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import HeroSection from "../../components/HeroSection/HeroSection.js";
 import MainProducts from "../../components/MainProducts/MainProducts.js";
-import FooterContainer from "../../components/FooterContainer/FooterContainer.js";
-import FooterContactItem from "../../components/FooterContactItem/FooterContactItem.js";
+import FooterLinks from "../../components/FooterLinks/FooterLinks.js";
+import HeaderLink from "../../components/HeaderLink/HeaderLink.js";
 
 import { Link } from "react-router-dom";
 
@@ -51,26 +51,7 @@ function Home() {
           alt="Logo_Astem"
         />
         {/* Menu de navegação */}
-        <NavContainer>
-          <NavLink className="px-3 py-4" href="/">Inicio</NavLink>
-          <NavLink className="dropdown  ">
-            <button
-              className="custom-btn dropdown-toggle px-3 py-4"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Produtos
-            </button>
-
-            <ul className="dropdown-menu ">
-              <li><a className="dropdown-item" href="produtos/Fanem">Fanem</a></li>
-              <li><a className="dropdown-item" href="produtos/Protec">Protec</a></li>
-              <li><a className="dropdown-item" href="produtos/Magnamed">Magnamed</a></li>
-            </ul>
-          </NavLink>
-          <NavLink className="px-3 py-4" href="/sobre">Sobre</NavLink>
-        </NavContainer>
+        <HeaderLink />
       </HeaderContainer>
 
       {/* Conteúdo principal */}
@@ -83,7 +64,7 @@ function Home() {
           </Sidebar>
           <HeroSection className="w-75 w-md-50">
             <p className="fs-4 mb-0">
-              Soluções que respeitam à Vida             
+              Soluções que respeitam à Vida
             </p>
           </HeroSection>
         </MainBanner>
@@ -100,7 +81,7 @@ function Home() {
                       src={cat.imagem}
                       className="card-img-top mb-4 card-img-fixed"
                       alt={cat.nome}
-                    />  
+                    />
                   </div>
                 </div>
               </Link>
@@ -110,39 +91,7 @@ function Home() {
       </MainContainer>
 
       {/* Rodapé - Informações de contato */}
-      <FooterContainer>
-        {/* Contato WhatsApp */}
-        <FooterContactItem
-          iconClass="fab fa-whatsapp"
-          label="WhatsApp"
-          link="#"
-        >
-          (61) 99223-2377
-        </FooterContactItem>
-        {/* Contato E-mail */}
-        <FooterContactItem
-          iconClass="fas fa-envelope"
-          label="E-mail"
-          link="#"
-        >
-          atendimento@astembsb.com
-        </FooterContactItem>
-        {/* Contato Telefone */}
-        <FooterContactItem
-          iconClass="fas fa-phone"
-          label="Telefone"
-          link="#"
-        >
-          (61) 3361-3455
-        </FooterContactItem>
-        <FooterContactItem
-          iconClass="fas fa-map-marker-alt"
-          label="Endereço"
-          link="https://waze.com/ul/h6vjyhf8zw"
-        >
-          SIA Trecho 02 Lote 205/275 - Brasília/DF
-        </FooterContactItem>
-      </FooterContainer>
+      <FooterLinks />
     </CustomContainer >
   );
 };
