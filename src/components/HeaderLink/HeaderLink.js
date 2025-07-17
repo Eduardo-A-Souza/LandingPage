@@ -20,9 +20,9 @@ const HeaderLink = () => {
                 </button>
 
                 <ul className="dropdown-menu ">
-                    <li><a className="dropdown-item" href="produtos/Fanem">Fanem</a></li>
-                    <li><a className="dropdown-item" href="produtos/Protec">Protec</a></li>
-                    <li><a className="dropdown-item" href="produtos/Magnamed">Magnamed</a></li>
+                    <li><a className="dropdown-item px-3" href="produtos/Fanem">Fanem</a></li>
+                    <li><a className="dropdown-item px-3" href="produtos/Protec">Protec</a></li>
+                    <li><a className="dropdown-item px-3" href="produtos/Magnamed">Magnamed</a></li>
                 </ul>
             </NavLink>
             <NavLink className="px-3 py-4" href="/sobre">Sobre</NavLink>
