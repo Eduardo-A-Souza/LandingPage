@@ -1,0 +1,7 @@
+main {
+    background-color: #999;
+    text-align: center !important;
+    height: 200px;
+
+    border-radius: 40px 8px 40px 8px;
+}

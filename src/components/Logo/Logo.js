@@ -2,9 +2,9 @@
 import React from 'react';
 import './Logo.css';
 
-const Logo = ({ src = "", alt = "Logo_Astem" }) => {
+const Logo = ({ src = "", alt = "Logo_Astem", className = "" }) => {
     return (
-        <div className="logo-astem img-fluid px-3">
+        <div className={`logo-astem img-fluid px-3 ${className}`}>
             <a href="/">
                 <img src={src} alt={alt} />
             </a>

@@ -8,12 +8,13 @@ import Home from './pages/Home/Home.js';
 import Products from './pages/Products/Products.js';
 import ProductDetails from './pages/ProductDetails/ProductDetails.js';
 import About from './pages/About/About.js';
+import UnderConstruction from './pages/UnderConstruction/UnderConstruction.js';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<UnderConstruction />} />
         {/* rota dinâmica para produtos por categoria */}
         <Route path="/produtos/:categoria" element={<Products />} />
         <Route path="/pedido/:id" element={<ProductDetails />} />
