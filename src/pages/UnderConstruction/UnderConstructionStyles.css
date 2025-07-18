@@ -1,7 +1,25 @@
 main {
-    background-color: #999;
+    background-color: #bbb;
     text-align: center !important;
-    height: 200px;
+    height: 175px;
 
     border-radius: 40px 8px 40px 8px;
+}
+
+h1 {
+    font-size : 3rem;
+}
+
+.logo-custom {
+    max-height: 125px !important;
+}
+
+@media (max-width: 762px) {
+    .logo-custom {
+        max-height: 75px !important;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
